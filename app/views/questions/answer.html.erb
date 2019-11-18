@@ -1,17 +1,23 @@
-<h1>Questions#answer</h1>
+<div class="banner">
+  <h1>Questions#answer</h1>
+</div>
 
+<div class="card">
+  <h3>Your question :</h3>
 
-<h3>Your question :</h3>
+  <%= @question %>
 
-<%= @question %>
+  <br>
+  <br>
+</div>
+
+<div class="card">
+  <h3>-Coach answer :</h3>
+
+  <%= @answer %>
+</div>
 
 <br>
 <br>
 
-<h3>-Coach answer :</h3>
-
-
-<%= @answer %>
-
-<br>
-<br>
+<%= link_to 'Click here for ask a new question', ask_path, class: 'btn' %>
